@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>standar</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="shop.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+</head>
+<body>
+  <div class="cont">
+    <div class="item1">
+    <!--info bar-->
+        <div class="cont-info-bar">
+            <a class="buttons" id="phone"><i class='fas fa-phone'></i>+961 81 083579</a>
+            <a class="buttons" id="mail"><i class='fas fa-envelope'></i>info@yallah-shop.com</a>
+            <a class="buttons">Brands</a>
+            <a class="buttons">Wishlist</a>
+            <a class="buttons">Checkout</a>
+            <a class="button-r">Login / Register</a>
+        </div>
+    </div>
+    <div class="item2">
+        <!-- header: logo - search input and buy value -->
+        <div class="cont-header">
+            <div class="col-1">
+                <img src="images/logo.png">
+            </div>
+            <div class="col-1" id="input-i">
+                <input type="search" name="product-need" placeholder="search for products">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="col-1">
+                <div class="buy-val"><i class='fas fa-lock' style='font-size:24px'></i>0 items - 0.00 L.L</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="item3">
+      <!-- navigator bar-->
+      <div class="navbar">
+        <a href="#" id="home"><i class="fa fa-home"></i></a>
+        <div class="dropdown">
+          <button class="dropbtn">Electronics  <i class="fa fa-caret-down"></i></button>
+          <div class="dropcont">
+            <a href="#">Flash Accessories</a>
+            <a href="#">Bluetooth Speaker</a>
+            <a href="#">Bluetooth</a>
+            <a href="#">Headsets</a>
+            <a href="#">Radio</a>
+            <a href="#">Digital Cameras</a>
+            <a href="#">Tablets</a>
+            <a href="#">DVD Players</a>
+            <a href="#">Printers</a>
+            <a href="#">Scooter & HoverBoards</a>
+            <a href="#">Videos Games</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Phone Accessories  <i class="fa fa-caret-down"></i></button>
+          <div class="dropcont">
+            <a href="#">Iphone</a>
+            <a href="#">phone charer</a>
+            <a href="#">Power banks</a>
+            <a href="#">Phone covers</a>
+            <a href="#">Selfie stick</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Home & Outdor  <i class="fa fa-caret-down"></i></button>
+          <div class="dropcont">
+            <a href="#">Home decor</a>
+            <a href="#">Digital scales</a>
+            <a href="#">Backpack</a>
+            <a href="#">Sports</a>
+            <a href="#">Lighting</a>
+            <a href="#">Vacuum & Floor cleaner</a>
+            <a href="#">Baby supplies</a>
+            <a href="#">School</a>
+            <a href="#">Coffe maker</a>
+            <a href="#">Health & Beauty</a>
+            <a href="#">Heating</a>
+            <a href="#">Kitchen supplies</a>
+            <a href="#">Outdoor camping gear & Gadgets</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Laptops & Accessories  <i class="fa fa-caret-down"></i></button>
+          <div class="dropcont">
+            <a href="#">Chargers</a>
+            <a href="#">Laptops</a>
+            <a href="#">Laptop case</a>
+            <a href="#">Lenovo</a>
+            <a href="#">Toshiba</a>
+            <a href="#">HP</a>
+            <a href="#">Acer</a>
+            <a href="#">Asus</a>
+            <a href="#">Dell</a>
+            <a href="#">Usb</a>
+            <a href="#">Ipad cases</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Car Accessories  <i class="fa fa-caret-down"></i></button>
+          <div class="dropcont">
+            <a href="#">Audi</a>
+            <a href="#">BMW</a>
+            <a href="#">Mercedes-Benz</a>
+            <a href="#">Infinty</a>
+            <a href="#">GMC</a>
+            <a href="#">Honda</a>
+            <a href="#">Jeep</a>
+            <a href="#">Wheels & Rims</a>
+            <a href="#">Car led lights</a>
+            <a href="#">Car mats</a>
+          </div>
+        </div>
+        <a href="#">New Arrivals</a>
+        <a href="#">Shop</a>
+      </div>
+    </div>
+    <div class="item4">
+      <!--wide images shop now and whatsapp-->
+      <img src="images/electro.gif" alt="electronics-pic">
+      <img src="images/whatsapp-gif-wide.gif" alt="go-whatsapp">
+    </div>
+    <div class="item5">
+      <!-- gallery show -->
+      <div class="container">
+        <div class="row">
+          <div class="pic1">
+            <div id="slide1">
+              <img src="images/electro2.png" alt="electronics" id="img1">
+              <img src="images/cars.jpg" alt="cars" class="img2">
+              <img src="images/cell.jpg" alt="cell" class="img3">
+              <img src="images/home.jpg" alt="home" class="img4">
+              <img src="images/laptop.jpg" alt="laptop" class="img5">
+              <button onclick="myNext()"><i class="fas fa-chevron-right" id="next"></i></button>
+              <button><i class="fas fa-chevron-right" id="prev"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side">
+        <img src="images/new-arrivals-gif.gif" alt="new arrivals" id="img1">
+        <img src="images/Delivery-payment-banner-yalla-shop.jpg" alt="delivery payment" id="img2">
+      </div>
+    </div>
+    <div class="item6">
+      <!-- first row of img box-->
+      <h2>HOT DEALS</h2>
+      <hr />
+      <div class="box1">
+        <img src="images/PSP4.jpg" title="PSP4">
+        <div id="desc1"><a href="#" title="PlayStation 4 500GB Console"> PlayStation 4 500GB Console</a></div>
+        <div id="desc2">1,400,000L.L <span>1,596,000L.L</span></div>
+        <button type="button">Read more</button>
+      </div>
+      <div class="box2">
+        <img src="images/Farad-LED-Digital.jpg" title="Farad-LED-Digital">
+        <div id="desc3"><a href="#" title="Farad-LED-Digital"> Farad-LED-Digital</a></div>
+        <div id="desc4">212,000L.L></div>
+        <button type="button">Read more</button>
+      </div>
+      <div class="box3">
+        <img src="images/N58-Stylish-Stainless-Steel-Protective-Car-Exhaust-Pipe-Muffler-220x330.jpg" title="Stylish-Stainless-Steel-Protective-Car-Exhaust-Pipe-Muffler">
+        <div id="desc5"><a href="#" title="Stylish-Stainless-Steel-Protective-Car-Exhaust-Pipe-Muffler"> Stylish-Stainless-Steel</a></div>
+        <div id="desc6">212,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="item7">
+      <!-- second row of img box-->
+      <h2 class="heading">Electronics - <a href="#" title="Electronic shop">view all</a></h2>
+      <div class="buttons-prev-next1">
+        <button type="button" id="prev"><i class="fas fa-chevron-right" id="prev"></i></button>
+        <button type="button"id="next"><i class="fas fa-chevron-right" id="next"></i></button>
+      </div>
+      <hr />
+      <div class="box4">
+        <img src="images/GPO-Bermuda-Classic-Retro-Style-Turntable-with-MP3-USB.png" title="GPO-Bermuda-Classic-Retro-Style-Turntable-with-MP3-USB.png">
+        <div id="desc7"><a href="#" title="Classic-Retro-Style-Turntable"> Classic-Retro-Style</a></div>
+        <div id="desc8">1,352,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box5">
+        <img src="images/Tucano-Busta-Nylon-sleeve-for-laptop-12.png" title="Tucano-Busta-Nylon-sleeve-for-laptop-12">
+        <div id="desc9"><a href="#" title="Tucano-Busta-Nylon-sleeve-for-laptop-12"> Tucano-Busta-Nylon</a></div>
+        <div id="desc10">100,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box6">
+        <img src="images/Boompods-Blockblaster-32W-Bluetooth-Speaker.png" title="Boompods-Blockblaster-32W-Bluetooth-Speaker">
+        <div id="desc11"><a href="#" title="Boompods-Blockblaster-32W-Bluetooth-Speaker"> Boompods-Block...</a></div>
+        <div id="desc12">572,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box7">
+        <img src="images/Anker-Powerline-Micro-Usb-Cable.png" title="Anker-Powerline-Micro-Usb-Cable.png">
+        <div id="desc13"><a href="#" title="Anker-Powerline-Micro-Usb-Cable.png"> Anker-Power...</a></div>
+        <div id="desc14">52,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box8">
+        <img src="images/Anker-Powerdrive-2-Ports-3FT-Micro-USB-To-USB-Cable.png" title="Anker-Powerdrive-2-Ports-3FT-Micro-USB-To-USB-Cable">
+        <div id="desc15"><a href="#" title="Anker-Powerdrive-2-Ports-3FT-Micro-USB-To-USB-Cable"> Anker-Powerdrive...</a></div>
+        <div id="desc16">132,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box9">
+        <img src="images/Powerport-2.png" title="Powerport-2.png">
+        <div id="desc17"><a href="#" title="Powerport-2.png">Powerport-2...</a></div>
+        <div id="desc18">128,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box10">
+        <img src="images/Anker-SoundCore-Flare-Black-Bluetooth.png" title="Anker-SoundCore-Flare-Black-Bluetooth.png">
+        <div id="desc19"><a href="#" title="Anker-SoundCore-Flare-Black-Bluetooth.png">Anker-SoundCore...</a></div>
+        <div id="desc20">376,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box11">
+        <img src="images/PATCHWORKS-PureCover-case-with-magnetic.png" title="PATCHWORKS-PureCover-case-with-magnetic.png">
+        <div id="desc21"><a href="#" title="PATCHWORKS-PureCover-case-with-magnetic.png">PATCHWORKS...</a></div>
+        <div id="desc22">108,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box12">
+        <img src="images/Momax-iPower-Minimal-PD2-External-Battery.png" title="Momax-iPower-Minimal-PD2-External-Battery.png">
+        <div id="desc23"><a href="#" title="Momax-iPower-Minimal-PD2-External-Battery.png">Momax-iPower...</a></div>
+        <div id="desc24">232,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box13">
+        <img src="images/QUSHINI-ROBOT-SPEAKER-WHIT-BIANCO.png" title="QUSHINI-ROBOT-SPEAKER-WHIT-BIANCO.png">
+        <div id="desc25"><a href="#" title="QUSHINI-ROBOT-SPEAKER-WHIT-BIANCO.png">QUSHINI-ROBOT...</a></div>
+        <div id="desc26">144,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+    </div>
+    </div>
+    <div class="item8">
+      <!-- third row of img box-->
+      <h2 class="heading">Phone Accessories - <a href="#" title="Phone Accessories">view all</a></h2>
+      <div class="buttons-prev-next2">
+        <button type="button" id="prev"><i class="fas fa-chevron-right" id="prev"></i></button>
+        <button type="button"id="next"><i class="fas fa-chevron-right" id="next"></i></button>
+      </div>
+      <hr />
+      <div class="box4">
+        <img src="images2/Anker-Powerline-USB-C-with-lightining-connector-3ft-B2B-White-220x330.png" title="Anker-Powerline-USB-C-with-lightining-connector-3ft-B2B-White">
+        <div id="desc7"><a href="#" title="Anker-Powerline-USB-C-with-lightining-connector-3ft-B2B-White"> Anker-Powerline-USB...</a></div>
+        <div id="desc8">152,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box5">
+        <img src="images2/Anker-Powerport-4-Port-USB-220x330.png" title="Anker-Powerport-4-Port-USB-220x330.png">
+        <div id="desc9"><a href="#" title="Anker-Powerport-4-Port-USB-220x330.png"> Anker-Powerport...</a></div>
+        <div id="desc10">312,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box6">
+        <img src="images2/ANKER-A2056L11-POWERPORT-SPEED-PD-5-DESKTOP-CHARGER-WITH-USB-C-POWER-DELIVERY-BLACK-220x330.png" title="ANKER-A2056L11-POWERPORT-SPEED-PD-5">
+        <div id="desc11"><a href="#" title="ANKER-A2056L11-POWERPORT-SPEED-PD-5"> ANKER-A2056...</a></div>
+        <div id="desc12">312,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box7">
+        <img src="images2/GroPro-3-Way-Stick-220x330.png" title="GroPro-3-Way-Stick">
+        <div id="desc13"><a href="#" title="GroPro-3-Way-Stick"> GroPro-3-Way...</a></div>
+        <div id="desc14">400,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box8">
+        <img src="images2/Element-Case-iPhone-XR-Illusion-Black-1-220x330.png" title="Element-Case-iPhone-XR-Illusion-Black">
+        <div id="desc15"><a href="#" title="Element-Case-iPhone-XR-Illusion-Black"> Element-Case...</a></div>
+        <div id="desc16">76,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box9">
+        <img src="images2/Anker-Power-Core-15600-220x330.png" title="Anker-Power-Core">
+        <div id="desc17"><a href="#" title="Anker-Power-Core">Anker-Power...</a></div>
+        <div id="desc18">332,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box10">
+        <img src="images2/Case-Mate-iPhone-XR-iridescent-220x330.png" title="Case-Mate-iPhone-XR-iridescent-220x330.png">
+        <div id="desc19"><a href="#" title="Case-Mate-iPhone-XR">Case-Mate-iPho...</a></div>
+        <div id="desc20">88,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box11">
+        <img src="images2/Anker-PowerLine-3ft-Lightning-Cable-220x330.png" title="Anker-PowerLine-3ft-Lightning-Cable-220x330.png">
+        <div id="desc21"><a href="#" title="Anker-PowerLine-3ft-Lightning">Anker-PowerLine...</a></div>
+        <div id="desc22">60,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box12">
+        <img src="images2/Momax-iPhone-11-Silicone-case-Black-220x330.png" title="Momax-iPhone-11-Silicone-case-Black-220x330.png">
+        <div id="desc23"><a href="#" title="Momax-iPhone-11-Silicone-case-Black">Momax-iPhone-11...</a></div>
+        <div id="desc24">72,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box13">
+        <img src="images2/Ted-Baker-iPhone-XR-Anti-Shock-Case-Babylon-Nickel-220x330.png" title="Ted-Baker-iPhone-XR-Anti-Shock-Case-Babylon-Nickel-220x330.png">
+        <div id="desc25"><a href="#" title="Ted-Baker-iPhone-XR-Anti-Shock-Case-Babylon">Ted-Baker-iPhone...</a></div>
+        <div id="desc26">72,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="item9">
+      <!-- fourth row of img box-->
+      <h2 class="heading">Home & Outdoor - <a href="#" title="Phone Accessories">view all</a></h2>
+      <div class="buttons-prev-next3">
+        <button type="button" id="prev"><i class="fas fa-chevron-right" id="prev"></i></button>
+        <button type="button"id="next"><i class="fas fa-chevron-right" id="next"></i></button>
+      </div>
+      <hr />
+      <div class="box4">
+        <img src="images3/54Celsius-PyroPet-Skeleton-Bíbí-Candle-Mint-Green-220x330.png" title="54Celsius-PyroPet-Skeleton-Bíbí-Candle-Mint-Green-220x330.png">
+        <div id="desc7"><a href="#" title="54Celsius-PyroPet-Skeleton-Bíbí"> 54Celsius-PyroPet...</a></div>
+        <div id="desc8">96,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box5">
+        <img src="images3/Cuddle-Barn-Gallop-220x330.png" title="Cuddle-Barn-Gallop-220x330.png">
+        <div id="desc9"><a href="#" title="Cuddle-Barn-Gallop"> Cuddle-Barn...</a></div>
+        <div id="desc10">140,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box6">
+        <img src="images3/Asobu-In-Style-Pill-Organizer-Bottle-Black-3-220x330.png" title="Asobu-In-Style-Pill-Organizer-Bottle-Black-3-220x330.png">
+        <div id="desc11"><a href="#" title="Asobu-In-Style-Pill"> Asobu-In-Style...</a></div>
+        <div id="desc12">72,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box7">
+        <img src="images3/Momax-Q-LED-Desk-Lamp-Wireless-Charging-Base-Space-Grey-220x330.png" title="Momax-Q-LED-Desk-Lamp-Wireless-Charging-Base-Space-Grey-220x330.png">
+        <div id="desc13"><a href="#" title="Momax-Q-LED-Desk-Lamp-Wireless-Charging"> Momax-Q-LED...</a></div>
+        <div id="desc14">476,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box8">
+        <img src="images3/Hoptimist-Small-Smiley-Cool-Yellow-220x330.png" title="Hoptimist-Small-Smiley-Cool-Yellow-220x330.png">
+        <div id="desc15"><a href="#" title="Hoptimist-Small-Smiley"> Hoptimist-Small...</a></div>
+        <div id="desc16">100,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box9">
+        <img src="images3/Nohoo-neoprene-kids-backpack-Big-Bee-220x330.png" title="Nohoo-neoprene-kids-backpack-Big-Bee-220x330.png">
+        <div id="desc17"><a href="#" title="Nohoo-neoprene-kids-backpack"> Nohoo-neoprene...</a></div>
+        <div id="desc18">220,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box10">
+        <img src="images3/Asobu-–-Fresh-N-Go-–-Silver-3-1-220x330.png" title="Asobu-–-Fresh-N-Go-–-Silver-3-1-220x330.png">
+        <div id="desc19"><a href="#" title="Asobu-–-Fresh-N-Go-–-Silver"> Asobu-Fresh...</a></div>
+        <div id="desc20">116,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box11">
+        <img src="images3/XD-Design-Bobby-Compact-M-Anti-Theft-backpack-Camouflage-Blue-up-to-14-220x330.png" title="XD-Design-Bobby-Compact-M-Anti-Theft-backpack-Camouflage-Blue-up-to-14-220x330.png">
+        <div id="desc21"><a href="#" title="XD-Design-Bobby-Compact"> XD-Design-Bobby...</a></div>
+        <div id="desc22">512,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box12">
+        <img src="images3/Wacaco-Minipresso-GR-Portable-Espresso-Machine-for-Ground-Coffee-220x330.png" title="Wacaco-Minipresso-GR-Portable-Espresso-Machine-for-Ground-Coffee-220x330.png">
+        <div id="desc23"><a href="#" title="Wacaco-Minipresso-GR-Portable-Espresso">Wacaco-Minipresso...</a></div>
+        <div id="desc24">320,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box13">
+        <img src="images3/Anker-Eufy-Lumos-Smart-Bulb-White-and-Color-220x330.png" title="Anker-Eufy-Lumos-Smart-Bulb-White-and-Color-220x330.png">
+        <div id="desc25"><a href="#" title="Anker-Eufy-Lumos-Smart">Anker-Eufy...</a></div>
+        <div id="desc26">276,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="item10">
+      <!-- fifth row of img box-->
+      <h2 class="heading">Car Accessories - <a href="#" title="Phone Accessories">view all</a></h2>
+      <div class="buttons-prev-next4">
+        <button type="button" id="prev"><i class="fas fa-chevron-right" id="prev"></i></button>
+        <button type="button"id="next"><i class="fas fa-chevron-right" id="next"></i></button>
+      </div>
+      <hr />
+      <div class="box4">
+        <img src="images4/Anker-Powerline-Micro-Usb-Cable-1-220x330.png" title="Anker-Powerline-Micro-Usb-Cable-1-220x330.png">
+        <div id="desc7"><a href="#" title="Anker-Powerline-Micro-Usb-Cable"> Anker-Powerline...</a></div>
+        <div id="desc8">52,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box5">
+        <img src="images4/N82-Classic-Accessories-73534-MotoGear-Scooter-Cover-Large-220x330.jpg" title="N82-Classic-Accessories-73534-MotoGear-Scooter-Cover-Large-220x330.jpg">
+        <div id="desc9"><a href="#" title="N82-Classic-Accessories-73534-MotoGear"> Classic-Accessory...</a></div>
+        <div id="desc10">152,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box6">
+        <img src="images4/Anker-Roav-Jump-Starter-Pro-by-Anker-800A-Peak-12V-for-Gas-Engines-up-to-6.0L-or-Diesel-Engines-up-to-3.0L-220x330.png" title="Anker-Roav-Jump-Starter-Pro-by-Anker-800A-Peak-12V-for-Gas-Engines-up-to-6.0L-or-Diesel-Engines-up-to-3.0L-220x330.png">
+        <div id="desc11"><a href="#" title="Anker-Roav-Jump-Starter-Pro-by-Anker"> Anker-Roav...</a></div>
+        <div id="desc12">840,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box7">
+        <img src="images4/N63-Honda-Civic-Mat-Floor-220x330.jpg" title="N63-Honda-Civic-Mat-Floor-220x330.jpg">
+        <div id="desc13"><a href="#" title="N63-Honda-Civic"> N63-Honda...</a></div>
+        <div id="desc14">88,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box8">
+        <img src="images4/N64-Farad-LED-Digital--220x330.jpg" title="N64-Farad-LED-Digital--220x330.jpg">
+        <div id="desc15"><a href="#" title="N64-Farad-LED-Digital"> N64-Farad-LED...</a></div>
+        <div id="desc16">212,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box9">
+        <img src="images4/Anker-Powerdrive-2-Ports-3FT-Micro-USB-To-USB-Cable-24W-Dual-USB-Car-Charger-3FT-Micro-USB-To-USB-Cable-220x330.png" title="Anker-Powerdrive-2-Ports-3FT-Micro-USB-To-USB-Cable-24W-Dual-USB-Car-Charger-3FT-Micro-USB-To-USB-Cable-220x330.png">
+        <div id="desc17"><a href="#" title="Anker-Powerdrive-2-Ports"> Anker-Powerdrive...</a></div>
+        <div id="desc18">132,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box10">
+        <img src="images4/N86-SONY-CDX-G1150U-CD-USB-FM-AM-Tuner-220x330.png" title="N86-SONY-CDX-G1150U-CD-USB-FM-AM-Tuner-220x330.png">
+        <div id="desc19"><a href="#" title="N86-SONY-CDX-G1150U-CD-USB-FM-AM-Tuner-220x330.png"> SONY-CDX...</a></div>
+        <div id="desc20">332,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box11">
+        <img src="images4/Anker-PowerDrive-2-Ports-3ft-Micro-USB-to-USB-Cable-24W-Dual-USB-Car-Charger-220x330.png" title="Anker-PowerDrive-2-Ports-3ft-Micro-USB-to-USB-Cable-24W-Dual-USB-Car-Charger-220x330.png">
+        <div id="desc21"><a href="#" title="Anker-PowerDrive-2-Ports"> Anker-PowerDrive...</a></div>
+        <div id="desc22">76,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box12">
+        <img src="images4/N19-Portable-DC-12V-Mini-Metal-Pump-2-Copy-220x330.jpg" title="N19-Portable-DC-12V-Mini-Metal-Pump-2-Copy-220x330.jpg">
+        <div id="desc23"><a href="#" title="N19-Portable-DC">Portable-DC...</a></div>
+        <div id="desc24">164,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box13">
+        <img src="images4/N71-Easy-Carry-Hydraulic-Jack-220x330.jpg" title="N71-Easy-Carry-Hydraulic-Jack-220x330.jpg">
+        <div id="desc25"><a href="#" title="N71-Easy-Carry"> Easy-Carry...</a></div>
+        <div id="desc26">108,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="item11">
+      <!-- sixth row of img box-->
+      <h2 class="heading">NEW ARRIVALS</h2>
+      <div class="buttons-prev-next5">
+        <button type="button" id="prev"><i class="fas fa-chevron-right" id="prev"></i></button>
+        <button type="button"id="next"><i class="fas fa-chevron-right" id="next"></i></button>
+      </div>
+      <hr />
+      <div class="box4">
+        <img src="images5/laptop-batteries-220x330.png" title="laptop-batteries-220x330.png">
+        <div id="desc7"><a href="#" title="laptop-batteries-220x330"> laptop-battery...</a></div>
+        <div id="desc8">96,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box5">
+        <img src="images5/TOSHIBA-LAPTOP-C55-2043-1-220x330.jpg" title="TOSHIBA-LAPTOP-C55-2043-1-220x330.jpg">
+        <div id="desc9"><a href="#" title="TOSHIBA-LAPTOP-C55-2043"> TOSHIBA-LAPTOP...</a></div>
+        <div id="desc10">1,956,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box6">
+        <img src="images5/N131-TOSHIBA-LAPTOP--220x330.jpg" title="images5/N131-TOSHIBA-LAPTOP--220x330.jpg">
+        <div id="desc11"><a href="#" title="N131-TOSHIBA-LAPTOP--220x330"> TOSHIBA-LAPTOP...</a></div>
+        <div id="desc12">1,956,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box7">
+        <img src="images5/N124-MICROSOFT-OFFICE-365-HOME-220x330.png" title="N124-MICROSOFT-OFFICE-365-HOME-220x330.png">
+        <div id="desc13"><a href="#" title="N124-MICROSOFT-OFFICE-365-HOME-220x330"> MICROS-OFFICE...</a></div>
+        <div id="desc14">176,000L.L</div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box8">
+        <img src="images5/N121-Lenovo-Think-Pad-220x330.jpg" title="N121-Lenovo-Think-Pad-220x330.jpg">
+        <div id="desc15"><a href="#" title="N121-Lenovo-Think-Pad-220x330"> Lenovo-Think-Pad...</a></div>
+        <div id="desc16">96,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box9">
+        <img src="images5/N115-HP-LAPTOP-PAVILION-14AC102NE-2-220x330.jpeg" title="N115-HP-LAPTOP-PAVILION-14AC102NE-2-220x330.jpeg">
+        <div id="desc17"><a href="#" title="N115-HP-LAPTOP-PAVILION-14AC102NE-2-220x330."> LAPTOP-PAVIL...</a></div>
+        <div id="desc18">1,796,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box10">
+        <img src="images5/N112-Toshiba-Satellite-charger-1-220x330.jpg" title="N112-Toshiba-Satellite-charger-1-220x330.jpg">
+        <div id="desc19"><a href="#" title="N112-Toshiba-Satellite-charger-1-220x330"> Toshiba-charger...</a></div>
+        <div id="desc20">96,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box11">
+        <img src="images5/N110-chargers-2-220x330.png" title="N110-chargers-2-220x330.png">
+        <div id="desc21"><a href="#" title="N110-chargers-2-220x330"> N110-chargers...</a></div>
+        <div id="desc22">96,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box12">
+        <img src="images5/N99-PSP4-3-220x330.jpg" title="N99-PSP4-3-220x330.jpg">
+        <div id="desc23"><a href="#" title="N99-PSP4-3-220x330"> N99-PSP4...</a></div>
+        <div id="desc24">1,400,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+      <div class="box13">
+        <img src="images5/N98-XBOX-console-2-220x330.jpg" title="N98-XBOX-console-2-220x330.jpg">
+        <div id="desc25"><a href="#" title="N98-XBOX-console-2-220x330"> XBOX-console-2...</a></div>
+        <div id="desc26">1,020,000L.L></div>
+        <button type="button">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="item12">
+      <!--footer-->
+      <div class="col1">
+        <h3>Contact Details</h3>
+        <div class="line"><i class="fas fa-map-marker-alt"></i><p>Cornich El-Mazraa, Al Refai Street, Al        Hashem Bldg - 1st Floor Beirut, Lebanon</p></div>
+        <div class="line"><i class='fas fa-phone' id="rotate"></i><p> 81 083579</p></div>
+        <div class="line"><i class="fas fa-envelope"></i><p>Send email via our <a href="#">Contact Us</a></p></div>
+      </div>
+      <div class="col2">
+        <h3>Information</h3>
+        <a href="#">About Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Advertise With Us</a>
+      </div>
+      <div class="col3">
+        <h3>Customer Service</h3>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Statement</a>
+        <a href="#">Warranty</a>
+        <a href="#">Sitemap</a>
+      </div>
+      <div class="col4">
+        <h3>My Account</h3>
+        <a href="#">My Account</a>
+        <a href="#">Cart</a>
+        <a href="#">Checkout</a>
+        <a href="#">Wishlist</a>
+      </div>
+    </div>
+    <div class="item13">
+      <p>© 2016 All Rights Reserved Yallah-shop.com | Website Designed & Developed by Protech24 Studio| Powered & Maintained by 6TH Art Design</p>
+      <div class="media"><i class="fab fa-facebook-square" id="facebook"></i><i class="fab fa-twitter-square" id="twitter"></i><i class="fab fa-google-plus-square" id="google"></i><i class="fab fa-linkedin" id="link"></i><i class="fab fa-youtube-square" id="youtube"></i><i class="fab fa-instagram-square" id="insta"></i></div>
+      <hr />
+    </div>
+    <div class="item14">
+      <img src="images5/Yallah-Shop-Mobile-App-300x56.png" title="download app">
+    </div>
+    <div class="item15">
+      <img src="images5/PAYMENT-BANNER-METHODS-2.jpg" title="payment methods">
+    </div>
+  </div>
+  <!--the fix element-->
+  <!--wtsapp window-->
+  
+  <div class="wts">
+    <div class="wts-msg-windo">whatsapp window</div>
+    <i class="fab fa-whatsapp-square"></i>
+  </div>
+  <!--pay-note-->
+  <div class="pay-note">
+    <div class="windo">payment window</div>
+    <button type="button"><i class="fas fa-chevron-right" id="next"></i></button>
+  </div>
+  <!--media windows-->
+  <div class="fb">
+    <div class="windo">facebook window</div>
+    <i class="fab fa-facebook-square" id="fb"></i>
+  </div>
+  <div class="tw">
+    <div class="windo">twitter window</div>
+    <i class="fab fa-twitter-square" id="tw"></i>
+  </div>
+  <div class="yt">
+    <div class="windo">youtube window</div>
+    <i class="fab fa-youtube-square" id="yt"></i>
+  </div>
+  <script src="shop.js"></script>
+</body>
+</html>
